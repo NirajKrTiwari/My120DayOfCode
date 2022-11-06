@@ -3,7 +3,7 @@ Move all the negative elements to one side of the array
 --------------------------------------------------------
 Test Case1:
 Input:
-Enter number of elements you want to enter:
+Enter the number of elements you want to enter:
 4
 Enter the elements:
 7
@@ -16,7 +16,7 @@ After Moving:
 
 Test Case2: //All negative number
 Input:
-Enter number of elements you want to enter:
+Enter the number of elements you want to enter:
 5
 Enter the elements:
 -3
@@ -55,7 +55,7 @@ import java.util.Scanner;
         public static void main(String args[])
         {
             Scanner in=new Scanner(System.in);
-            System.out.println("Enter number of elements you want to enter: ");
+            System.out.println("Enter the number of elements you want to enter: ");
             int n=in.nextInt();
             int arr[] = new int[n];
             System.out.println("Enter the elements:");
