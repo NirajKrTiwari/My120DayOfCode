@@ -1,0 +1,24 @@
+Throw
+------
+The throw keyword in Java is used to explicitly throw an exception from a method or any block of code. 
+We can throw either checked or unchecked exception.
+The throw keyword is mainly used to throw custom exceptions. 
+It is user defined Exception handling.
+
+Syntax: 
+
+throw Instance
+Example:
+throw new ArithmeticException("/ by zero");
+
+Throws
+-------
+
+Throws is a keyword in Java which is used in the signature of method to indicate that this method might throw one of the listed type exceptions. 
+The caller to these methods has to handle the exception using a try-catch block. 
+
+Syntax:  
+
+type method_name(parameters) throws exception_list
+exception_list is a comma separated list of all the 
+exceptions which a method might throw.
