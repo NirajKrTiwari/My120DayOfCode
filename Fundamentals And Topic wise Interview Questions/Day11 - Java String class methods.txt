@@ -1,0 +1,49 @@
+Java String class methods
+
+1. char charAt(int index): It returns a char value for the particular index
+example: 	String str="Hello";
+		str.charAt(1);
+		Output: e
+
+2. int length(): It returns the string length
+example: 	String str="Hello";
+		str.length();
+		Output: 5
+
+3. String substring(int beginIndex): It returns a substring for a given begin index.
+example: 	String str="Hello";
+		str.substring(3);
+		Output: lo
+
+4. String substring(int beginIndex): It returns a substring for the given begin index and end index.
+example: 	String str="Hello";
+		str.substring(1,3);
+		Output: ell
+
+5. boolean contains(CharSequence s): It returns true or false after matching the sequence of char value.
+example: 	String str="Hello";
+		System.out.println(name.contains("do");
+		Output: false
+
+6. boolean isEmpty(): 	It checks if string is empty.
+7. 	String concat(String str): 	It concatenates the specified string.
+example:  	String str1 = "Hello";  
+        	String str2 = "World"; 
+          	String str3 = str1.concat(str2); 
+		Output: Hello World
+
+7. String.equalsIgnoreCase(String another): It compares another string. It doesn't check the case.
+
+8. String[] split(String regex): It returns a split string matching regex.
+
+9. String intern(): It returns an interned string.
+
+10. int indexOf(int ch): It returns the specified char value index.
+
+11. String toLowerCase(): It returns a string in lowercase.
+
+12. String toUpperCase(): It returns a string in uppercase.
+
+13. String trim(): It removes the beginning and ending spaces of this string.
+
+14. String replace(char old, char new): It replaces all occurrences of the specified char value.

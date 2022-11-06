@@ -1,0 +1,26 @@
+BigInteger
+-----------
+BigInteger class is used for the mathematical operation which involves very big integer calculations that are outside the limit of all available primitive data types.
+
+In this way, BigInteger class is very handy to use because of its large method library and it is also used a lot in competitive programming. 
+Now below is given a list of simple statements in primitive arithmetic and its analogous statement in terms of BigInteger objects.
+
+Example:
+BigInteger A, B;
+A = BigInteger.valueOf(54);
+B = new BigInteger(“123456789123456789”);
+
+Java BigInteger isProbablePrime() Method
+-----------------------------------------
+The isProbablePrime() method of Java BigInteger class is used to determine if the given number is prime or not. For certainty =1, this method returns true if this BigInteger is prime and false if this BigInteger is composite.
+
+Syntax:
+public boolean isProbablePrime(int certainty)  
+Parameter:
+certainty - A measure of the uncertainty that the caller is willing to tolerate: if the call returns true the probability that this BigInteger is prime exceeds (1 - 1/2certainty). The execution time of this method is proportional to the value of this parameter.
+
+Returns:
+This method returns true if this BigInteger is probably prime, false if it's definitely composite.
+
+Exception:
+NA

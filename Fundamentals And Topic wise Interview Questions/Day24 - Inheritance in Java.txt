@@ -1,0 +1,21 @@
+Inheritance in Java
+--------------------
+Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of OOPs (Object Oriented programming system).
+
+The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also.
+
+Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+
+The extends keyword indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality.
+Syntax:
+class Subclass-name extends Superclass-name  
+{  
+   //methods and fields  
+}  
+
+Types of inheritance in java:
+1. single 
+2. multilevel
+3. hierarchical
+Not possible in java by using extends keywords. It is possible by using Interface concept in java.
+4. multiple inheritance // not possible directly

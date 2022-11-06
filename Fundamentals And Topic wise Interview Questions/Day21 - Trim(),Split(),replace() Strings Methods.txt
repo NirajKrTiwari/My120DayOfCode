@@ -1,0 +1,30 @@
+trim()
+-------
+The trim() method in Java String is a built-in function that eliminates leading and trailing spaces. 
+The Unicode value of the space character is ‘\u0020’. The trim() method in java checks this Unicode value before and after the string, if it exists then removes the spaces and returns the omitted string. 
+The trim() method also helps in trimming the characters in Java.
+
+Syntax: string.trim()
+
+split()
+-------
+The string split() method breaks a given string around matches of the given regular expression. 
+After splitting against the given regular expression, this method returns a string array.
+Example:
+Input String: 016-78967
+Regular Expression: - 
+Output : {"016", "78967"}
+
+replace()
+----------
+The Java String class replace() method returns a string replacing all the old char or CharSequence to new char or CharSequence.
+
+Syntax:
+public String replace(char oldChar, char newChar)    
+public String replace(CharSequence target, CharSequence replacement) 
+
+where,
+oldChar : old character
+newChar : new character
+target : target sequence of characters
+replacement : replacement sequence of characters

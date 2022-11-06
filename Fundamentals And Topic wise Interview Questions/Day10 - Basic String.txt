@@ -1,0 +1,24 @@
+What is String in Java?
+Generally, String is a sequence of characters. But in Java, string is an object that represents a sequence of characters. The java.lang.String class is used to create a string object.
+For example: String s="javatpoint";  
+
+How to create a string object?
+There are two ways to create String object:
+1. By string literal
+Java String literal is created by using double quotes. 
+For example: String s="Welcome";  
+2. By new keyword
+For example:  String s=new String("Welcome");
+
+Different String methods in java
+Java String class provides a lot of methods to perform operations on strings such as 
+1.	compare()
+2.	concat()
+3.	equals()
+4.	split()
+5.	length()
+6.	replace()
+7.	compareTo()
+8.	intern()
+9.	substring() 
+10.	etc.

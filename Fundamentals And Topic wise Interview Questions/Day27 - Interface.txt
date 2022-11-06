@@ -1,0 +1,59 @@
+Interface in Java
+----------------------------
+An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+
+The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
+
+In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body.
+
+Java Interface also represents the IS-A relationship.
+
+It cannot be instantiated just like the abstract class.
+
+Since Java 8, we can have default and static methods in an interface.
+
+Since Java 9, we can have private methods in an interface.
+
+Syntax:
+interface <interface_name>{  
+      
+    // declare constant fields  
+    // declare methods that abstract   
+    // by default.  
+} 
+
+Q1. Why use Java Interface?
+Answer:	There are mainly three reasons to use interface. They are given below.
+		1. It is used to achieve abstraction.
+		2. By interface, we can support the functionality of multiple inheritance.
+		3. It can be used to achieve loose coupling.
+
+Q2. How to declare an Interface?
+Answer:	An interface is declared by using the interface keyword. 
+		It provides total abstraction; means all the methods in an interface are declared with the empty body, and all the fields are public, static and final by default. 
+		A class that implements an interface must implement all the methods declared in the interface. 
+
+Multiple Inheritance using Interface
+-------------------------------------
+Example:
+
+interface Printable{  
+void print();  
+}  
+interface Showable{  
+void show();  
+}  
+class A7 implements Printable,Showable{  
+public void print(){System.out.println("Hello");}  
+public void show(){System.out.println("Welcome");}  
+  
+public static void main(String args[]){  
+A7 obj = new A7();  
+obj.print();  
+obj.show();  
+ }  
+}  
+
+Q3. Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
+Answer: 	Multiple inheritance is not supported in the case of class because of ambiguity. However, it is supported in case of an interface because there is no ambiguity. 
+		It is because its implementation is provided by the implementation class
