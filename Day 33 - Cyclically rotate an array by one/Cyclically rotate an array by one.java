@@ -9,6 +9,7 @@ Output:
 5 1 2 3 4
 
 Test Case2:
+Input:
 N = 8
 A[] = {9, 8, 7, 6, 4, 2, 1, 3}
 Output:
