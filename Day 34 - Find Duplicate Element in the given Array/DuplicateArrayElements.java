@@ -3,7 +3,7 @@ Find duplicate elements in the given array
 -------------------------------------------
 Test Case 1:
 Input:
-Number of elements you want to enter in array:
+The number of elements you want to enter in the array:
 4
 Enter element
 2
@@ -15,7 +15,7 @@ No Duplicate Value
 
 Test Case 2:
 Input:
-Number of elements you want to enter in array:
+The number of elements you want to enter in the array:
 5
 Enter element
 1
@@ -24,7 +24,7 @@ Enter element
 1
 6
 Output:
-Duplicate elements is 1
+Duplicate elements are 1
  */
 import java.util.Scanner;
 class Solution {
@@ -36,7 +36,7 @@ class Solution {
             {
                 if(nums[i]==nums[j])
                 {
-                    System.out.println("Duplicate elements is "+nums[i]);
+                    System.out.println("Duplicate elements are "+nums[i]);
                     return;
                 }
             }
@@ -48,7 +48,7 @@ public class DuplicateArrayElements {
     public static void main(String[] args) {
         Solution obj = new Solution();
         Scanner in=new Scanner(System.in);
-        System.out.println("Number of elements you want to enter in array:");
+        System.out.println("The number of elements you want to enter in the array:");
         int n=in.nextInt();
         int nums[]=new int[n];
         System.out.println("Enter element");
