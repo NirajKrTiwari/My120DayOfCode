@@ -3,6 +3,7 @@ Roman Number to Integer
 ------------------------
 
 Given a string in roman no format (s)  your task is to convert it to an integer . Various symbols and their values are given below.
+
 I 1
 V 5
 X 10
@@ -17,7 +18,7 @@ Input:
 s = V
 Output: 5
 
-Te 2:
+Test Case 2:
 
 Input:
 s = III 
