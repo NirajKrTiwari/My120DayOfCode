@@ -1,0 +1,43 @@
+Synchronization in Java
+------------------------
+Synchronization in Java is the capability to control the access of multiple threads to any shared resource.
+
+Java Synchronization is better option where we want to allow only one thread to access the shared resource.
+
+Q. Why use Synchronization?
+Ans. The synchronization is mainly used to
+1. To prevent thread interference.
+2. To prevent consistency problem.
+
+Types of Synchronization
+-------------------------
+There are two types of synchronization
+
+1. Process Synchronization
+2. Thread Synchronization
+
+Thread Synchronization
+-----------------------
+There are two types of thread synchronization mutual exclusive and inter-thread communication.
+
+Mutual Exclusive
+------------------
+1. Synchronized method.
+2. Synchronized block.
+3. Static synchronization.
+
+Concept of Lock in Java
+------------------------
+Synchronization is built around an internal entity known as the lock or monitor. 
+Every object has a lock associated with it. By convention, a thread that needs consistent access to an object's fields has to acquire the object's lock before accessing them, and then release the lock when it's done with them.
+
+Java Synchronized Method
+--------------------------
+If you declare any method as synchronized, it is known as synchronized method.
+
+Synchronized method is used to lock an object for any shared resource.
+
+When a thread invokes a synchronized method, it automatically acquires the lock for that object and releases it when the thread completes its task.
+
+Example:
+ynchronized void printTable(int n){//synchronized method
