@@ -1,157 +1,106 @@
-/*
-Array implementation of Stack
-------------------------------
+public class QueueUsingArrayMain {
 
-Test Case 1:
-Input:
-1.Push
-2.Pop
-3.Show
-4.Exit
-Enter your choice 
-1
-Enter Value
-3
-Item pushed
-Output:
-Item pushed
+    private int capacity;
+    int queueArr[];
+    int front;
+    int rear;
+    int currentSize = 0;
 
-Test Case 2:
-Input:
-1.Push
-2.Pop
-3.Show
-4.Exit
-Enter your choice 
-2
+    public QueueUsingArrayMain(int sizeOfQueue) {
+        this.capacity = sizeOfQueue;
+        front = 0;
+        rear = -1;
+        queueArr = new int[this.capacity];
+    }
+    public void enqueue(int data) {
+        if (isFull()) {
+            System.out.println("Queue is full!! Can not add more elements");
+        } else {
+            rear++;
+            if (rear == capacity - 1) {
+                rear = 0;
+            }
+            queueArr[rear] = data;
+            currentSize++;
+            System.out.println(data + " added to the queue");
 
-Output:
-Underflow !!
+        }
+    }
+    public void dequeue() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty!! Can not dequeue element");
+        } else {
+            front++;
+            if (front == capacity - 1) {
+                System.out.println(queueArr[front - 1] + " removed from the queue");
+                front = 0;
+            } else {
+                System.out.println(queueArr[front - 1] + " removed from the queue");
+            }
+            currentSize--;
+        }
+    }
+    public boolean isFull() {
+        if (currentSize == capacity) {
+            return true;
+        }
+        return false;
+    }
+    public boolean isEmpty() {
 
-Test Case 3:
-Input:
-Chose one from the below options...
-1.Push
-2.Pop
-3.Show
-4.Exit
-Enter your choice 
-1
-Enter Value3
-Item pushed
+        if (currentSize == 0) {
+            return true;
+        }
+        return false;
+    }
+    public void display()
+    {
+        for(int i=0;i< queueArr.length;i++)
+        {
+            System.out.print(queueArr[i]);
+        }
+    }
+    public static void main(String a[]) {
 
-Chose one from the below options...
-
-1.Push
-2.Pop
-3.Show
-4.Exit
-Enter your choice 
-1
-
-Output:
-Overflow !!
-*/
-
-
-Code:
-import javaScanner;  
-class Stack   
-{  
-    int top;   
-    int maxsize = 10;  
-    int[] arr = new int[maxsize];  
-      
-      
-    boolean isEmpty()  
-    {  
-        return (top < 0);  
-    }  
-    Stack()  
-    {  
-        top = -1;  
-    }  
-    boolean push (Scanner sc)  
-    {  
-        if(top == maxsize-1)  
-        {  
-            System.out.println("Overflow !!");  
-            return false;  
-        }  
-        else   
-        {  
-            System.out.println("Enter Value");  
-            int val = sc.nextInt();  
-            top++;  
-            arr[top]=val;  
-            System.out.println("Item pushed");  
-            return true;  
-        }  
-    }  
-    boolean pop ()  
-    {  
-        if (top == -1)  
-        {  
-            System.out.println("Underflow !!");  
-            return false;  
-        }  
-        else   
-        {  
-            top --;   
-            System.out.println("Item popped");  
-            return true;  
-        }  
-    }  
-    void display ()  
-    {  
-        System.out.println("Printing stack elements .....");  
-        for(int i = top; i>=0;i--)  
-        {  
-            System.out.println(arr[i]);  
-        }  
-    }  
-}  
-public class Stack_Operations {  
-public static void main(String[] args) {  
-    int choice=0;  
-    Scanner sc = new Scanner(System.in);  
-    Stack s = new Stack();  
-    System.out.println("*********Stack operations using array*********\n");  
-    System.out.println("\n------------------------------------------------\n");  
-    while(choice != 4)  
-    {  
-        System.out.println("\nChose one from the below options...\n");  
-        System.out.println("\n1.Push\n2.Pop\n3.Show\n4.Exit");  
-        System.out.println("\n Enter your choice \n");        
-        choice = sc.nextInt();  
-        switch(choice)  
-        {  
-            case 1:  
-            {   
-                s.push(sc);  
-                break;  
-            }  
-            case 2:  
-            {  
-                s.pop();  
-                break;  
-            }  
-            case 3:  
-            {  
-                s.display();  
-                break;  
-            }  
-            case 4:   
-            {  
-                System.out.println("Exiting....");  
-                System.exit(0);  
-                break;   
-            }  
-            default:  
-            {  
-                System.out.println("Please Enter valid choice ");  
-            }   
-        };  
-    }  
-}  
-}  
+        QueueUsingArrayMain queue = new QueueUsingArrayMain(5);
+        Scanner sc = new Scanner(System.in);
+        Stack s = new Stack();
+        System.out.println("*********Queue operations using array*********\n");
+        System.out.println("\n------------------------------------------------\n");
+        while(choice != 4)
+        {
+            System.out.println("\nChose one from the below options...\n");
+            System.out.println("\n1.Enqueue\n2.Dequeue\n3.Show\n4.Exit");
+            System.out.println("\n Enter your choice \n");
+            choice = sc.nextInt();
+            switch(choice)
+            {
+                case 1:
+                {
+                    int sc=in.nextInt();
+                    queue.enqueue(sc);
+                    break;
+                }
+                case 2:
+                {
+                    queue.dequeue();
+                    break;
+                }
+                case 3:
+                {
+                    queue.display();
+                    break;
+                }
+                case 4:
+                {
+                    System.out.println("Exiting....");
+                    System.exit(0);
+                    break;
+                }
+                default:
+                {
+                    System.out.println("Please Enter valid choice ");
+                }
+            }
+        }
+    }
