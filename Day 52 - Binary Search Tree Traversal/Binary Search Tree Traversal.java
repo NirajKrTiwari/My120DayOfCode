@@ -59,7 +59,7 @@ public class BST_Deletion {
         System.out.print("Enter the root node: ");
         int root_vale=in.nextInt();
         Node root=new Node(root_vale);
-        System.out.print("Enter the number of child node you want to enter: ");
+        System.out.print("Enter the number of child nodes you want to enter: ");
         int n=in.nextInt();
         for(int i=0;i<n;i++)
         {
