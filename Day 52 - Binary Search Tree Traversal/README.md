@@ -5,7 +5,7 @@ Test Case:
 
 Input:
 Enter the root node: 23
-Enter the number of child node you want to enter: 3
+Enter the number of child nodes you want to enter: 3
 Enter Value: 12
 Enter Value: 1
 Enter Value: 45
