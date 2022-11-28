@@ -1,16 +1,34 @@
-Binary Search Tree Traversal
------------------------------
-
-Test Case:
+Searching in Binary Search Tree
+--------------------------------
+Test Case 1:
 
 Input:
-Enter the root node: 23
-Enter the number of child nodes you want to enter: 3
-Enter Value: 12
-Enter Value: 1
-Enter Value: 45
-
+Enter the root node: 45
+Enter the number of child node you want to enter: 4
+Enter Value: 22
+Enter Value: 67
+Enter Value: 89
+Enter Value: 34
+Tree:
+22 34 45 67 89
+Enter the element you want to search
+34
 Output:
-Inorder Traversal: 1 12 23 45 
-Preorder Traversal: 23 12 1 45 
-Postorder Traversal: 1 12 45 23 
+Element 34 is found
+
+Test Case 2:
+
+Input:
+Enter the root node: 45
+Enter the number of child node you want to enter: 4
+Enter Value: 22
+Enter Value: 67
+Enter Value: 89
+Enter Value: 34
+Tree:
+22 34 45 67 89
+Enter the element you want to search
+30
+Output:
+Element 30 is not found
+
