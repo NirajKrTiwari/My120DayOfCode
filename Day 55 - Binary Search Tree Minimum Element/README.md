@@ -1,29 +1,31 @@
-Deletion in Binary Search Tree
--------------------------------
-Test Case 1:
-------------
+Binary Search Tree Minimum element
+-----------------------------------
+Given a Binary Search Tree (BST) that may be unbalanced, find the minimum element in it.
+example
 Input:
-Enter the root node: 45
-Enter the number of child nodes you want to enter: 3
-Enter Value: 12
-Enter Value: 56
-Enter Value: 23
-Inorder Traversal: 12 23 45 56
-Enter element You want to delete: 23
-
-Output:
-After Deletion: 12 45 56
-
-Test Case 2:
-------------
+        5
+      /   \
+     3     7
+    / \   / \
+   2   4 6   8
+Output: 2
 Input:
-Enter the root node: 34
-Enter the number of child nodes you want to enter: 3
-Enter Value: 12
-Enter Value: 54
-Enter Value: 2
-Inorder Traversal: 2 12 34 54
-Enter element You want to delete: 0
-
-Output:
-After Deletion: 2 12 34 54
+        5
+      /   \
+     3     7
+    / \   / \
+   2   4 6   8
+        / \
+       1   9
+Output: 1
+Input:
+        5
+      /   \
+     3     7
+    / \   / \
+   2   4 6   8
+        / \
+       1   9
+      /
+     0
+Output: 0
