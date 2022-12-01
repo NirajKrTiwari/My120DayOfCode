@@ -1,29 +1,26 @@
-Deletion in Binary Search Tree
--------------------------------
-Test Case 1:
-------------
+Check for Bst
+--------------
+Given a binary tree and an integer n, check if node with data n is present in the input binary tree or not. Return true or false.
+Test cases:
 Input:
-Enter the root node: 45
-Enter the number of child nodes you want to enter: 3
-Enter Value: 12
-Enter Value: 56
-Enter Value: 23
-Inorder Traversal: 12 23 45 56
-Enter element You want to delete: 23
-
-Output:
-After Deletion: 12 45 56
-
-Test Case 2:
-------------
-Input:
-Enter the root node: 34
-Enter the number of child nodes you want to enter: 3
-Enter Value: 12
-Enter Value: 54
-Enter Value: 2
-Inorder Traversal: 2 12 34 54
-Enter element You want to delete: 0
-
-Output:
-After Deletion: 2 12 34 54
+         10
+        /   \
+       20     30
+      / \    /  \
+     40  50 60   70
+    / \   / \
+   80 90 100 110
+n = 110
+Output: 1
+Test cases2:
+         10
+        /   \
+       20     30
+      / \    /  \
+     40  50 60   70
+    / \   / \
+   80 90 100 110
+n = 5
+Output: 0
+Time complexity: O(n)
+Space complexity: O(n)
