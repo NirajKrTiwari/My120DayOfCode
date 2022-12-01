@@ -1,5 +1,5 @@
-Check for Bst
---------------
+Check for Binary Search Tree
+-----------------------------
 Given a binary tree and an integer n, check if node with data n is present in the input binary tree or not. Return true or false.
 Test cases:
 Input:
