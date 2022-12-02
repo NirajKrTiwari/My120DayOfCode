@@ -1,31 +1,10 @@
-Binary Search Tree Minimum element
------------------------------------
-Given a Binary Search Tree (BST) that may be unbalanced, find the minimum element in it.
-example
-Input:
-        5
-      /   \
-     3     7
-    / \   / \
-   2   4 6   8
-Output: 2
-Input:
-        5
-      /   \
-     3     7
-    / \   / \
-   2   4 6   8
-        / \
-       1   9
-Output: 1
-Input:
-        5
-      /   \
-     3     7
-    / \   / \
-   2   4 6   8
-        / \
-       1   9
-      /
-     0
-Output: 0
+K-th smallest element in a BST
+-------------------------------
+k-th smallest element in a BST Given a binary search tree, write a function kthSmallest to find the kth smallest element in it. Note: You may assume k is always valid, 1 ≤ k ≤ BST's total elements. Example 1: Input: root = [3,1,4,null,2], k = 1 3 /
+1 4
+2 Output: 1 Example 2: Input: root = [5,3,6,2,4,null,null,1], k = 3 5 /
+3 6 /
+2 4 / 1 Output: 3
+
+Time complexity: O(n)
+Space complexity: O(n)
