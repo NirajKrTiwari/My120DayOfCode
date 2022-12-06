@@ -1,20 +1,31 @@
-Preorder to BST
-----------------
-Given an array arr[] of N nodes representing preorder traversal of some BST. You have to build the exact BST from it's given preorder traversal. 
-In Pre-Order traversal, the root node is visited before the left child and right child nodes.
+Normal BST to Balanced BST
+---------------------------
+Given a Binary Search Tree, modify the given BST such that itis balanced and has minimum possible height.
 
-Example 1:
+Examples :
 
 Input:
-N = 5
-arr[]  = {40,30,35,80,100}
-Output: 35 30 100 80 40
-Explanation: PreOrder: 40 30 35 80 100
-Therefore, the BST will be:
-              40
-           /      \
-         30       80
-           \        \   
-           35      100
-Hence, the postOrder traversal will
-be: 35 30 100 80 40
+       30
+      /
+     20
+    /
+   10
+Output:
+     20
+   /   \
+ 10     30
+
+Input:
+         4
+        /
+       3
+      /
+     2
+    /
+   1
+Output:
+      3            3           2
+    /  \         /  \        /  \
+   1    4   OR  2    4  OR  1    3   OR ..
+    \          /                   \
+     2        1                     4 
