@@ -1,31 +1,44 @@
-Normal BST to Balanced BST
+Merge two BST's
 ---------------------------
-Given a Binary Search Tree, modify the given BST such that itis balanced and has minimum possible height.
+Given two BSTs, return elements of both BSTs in sorted form.
 
-Examples :
-
-Input:
-       30
-      /
-     20
-    /
-   10
-Output:
-     20
-   /   \
- 10     30
+Example 1:
 
 Input:
-         4
-        /
-       3
-      /
-     2
-    /
-   1
-Output:
-      3            3           2
-    /  \         /  \        /  \
-   1    4   OR  2    4  OR  1    3   OR ..
-    \          /                   \
-     2        1                     4 
+BST1:
+       5
+     /   \
+    3     6
+   / \
+  2   4  
+BST2:
+        2
+      /   \
+     1     3
+            \
+             7
+            /
+           6
+Output: 1 2 2 3 3 4 5 6 6 7
+Explanation: 
+After merging and sorting the
+two BST we get 1 2 2 3 3 4 5 6 6 7.
+Example 2:
+
+Input:
+BST1:
+       12
+     /   
+    9
+   / \    
+  6   11
+BST2:
+      8
+    /  \
+   5    10
+  /
+ 2
+Output: 2 5 6 8 9 10 11 12
+Explanation: 
+After merging and sorting the
+two BST we get 2 5 6 8 9 10 11 12.
