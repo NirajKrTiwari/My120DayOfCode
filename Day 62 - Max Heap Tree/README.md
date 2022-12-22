@@ -1,44 +1,28 @@
-Merge two BST's
----------------------------
-Given two BSTs, return elements of both BSTs in sorted form.
+Max Heap Tree
+---------------
+Suppose the Heap is a Max-Heap as:
+      10
+    /    \
+   5      3
+  / \
+ 2   4
 
-Example 1:
+The element to be deleted is root, i.e. 10.
 
-Input:
-BST1:
-       5
-     /   \
-    3     6
-   / \
-  2   4  
-BST2:
-        2
-      /   \
-     1     3
-            \
-             7
-            /
-           6
-Output: 1 2 2 3 3 4 5 6 6 7
-Explanation: 
-After merging and sorting the
-two BST we get 1 2 2 3 3 4 5 6 6 7.
-Example 2:
+Process:
+The last element is 4.
 
-Input:
-BST1:
-       12
-     /   
-    9
-   / \    
-  6   11
-BST2:
-      8
-    /  \
-   5    10
-  /
- 2
-Output: 2 5 6 8 9 10 11 12
-Explanation: 
-After merging and sorting the
-two BST we get 2 5 6 8 9 10 11 12.
+Step 1: Replace the last element with root, and delete it.
+      4
+    /    \
+   5      3
+  / 
+ 2   
+
+Step 2: Heapify root.
+Final Heap:
+      5
+    /    \
+   4      3
+  / 
+ 2 
