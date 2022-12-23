@@ -1,28 +1,14 @@
-Max Heap Tree
----------------
-Suppose the Heap is a Max-Heap as:
-      10
-    /    \
-   5      3
-  / \
- 2   4
+Max Heap TreeCheck Binary Tree is SumTree
+------------------------------------------
+A SumTree is a Binary Tree where the value of a node is equal to the sum of the nodes present in its left subtree and right subtree. 
+An empty tree is SumTree and the sum of an empty tree can be considered as 0. A leaf node is also considered as SumTree.
 
-The element to be deleted is root, i.e. 10.
+Input:
+         26
+        /   \
+      10     3
+    /    \     \
+  4      6      3
 
-Process:
-The last element is 4.
-
-Step 1: Replace the last element with root, and delete it.
-      4
-    /    \
-   5      3
-  / 
- 2   
-
-Step 2: Heapify root.
-Final Heap:
-      5
-    /    \
-   4      3
-  / 
- 2 
+Output:
+The given tree is a SumTree
