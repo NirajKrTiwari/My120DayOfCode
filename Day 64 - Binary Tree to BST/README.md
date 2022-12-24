@@ -1,14 +1,20 @@
-Max Heap TreeCheck Binary Tree is SumTree
-------------------------------------------
-A SumTree is a Binary Tree where the value of a node is equal to the sum of the nodes present in its left subtree and right subtree. 
-An empty tree is SumTree and the sum of an empty tree can be considered as 0. A leaf node is also considered as SumTree.
-
+Binary Tree to BST
+-------------------
+Given a Binary Tree, convert it to Binary Search Tree in such a way that keeps the original structure of Binary Tree intact.
+ 
 Input:
-         26
-        /   \
-      10     3
-    /    \     \
-  4      6      3
+          1
+       /    \
+     2       3
+   /        
+ 4       
+Output: 1 2 3 4
 
-Output:
-The given tree is a SumTree
+Explanation:
+The converted BST will be
+
+        3
+      /   \
+    2     4
+  /
+ 1
