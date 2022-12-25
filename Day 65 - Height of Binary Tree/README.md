@@ -1,20 +1,10 @@
-Binary Tree to BST
--------------------
-Given a Binary Tree, convert it to Binary Search Tree in such a way that keeps the original structure of Binary Tree intact.
- 
+Height of Binary Tree
+----------------------
+Given a binary tree, find its height.
 Input:
-          1
-       /    \
-     2       3
-   /        
- 4       
-Output: 1 2 3 4
-
-Explanation:
-The converted BST will be
-
-        3
-      /   \
-    2     4
-  /
- 1
+  2
+   \
+    1
+   /
+ 3
+Output: 3   
