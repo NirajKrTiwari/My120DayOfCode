@@ -43,13 +43,18 @@ class StartingPointLoop {
         head.next.next = newNode(15);
         head.next.next.next = newNode(4);
         head.next.next.next.next = newNode(10);
-        head.next.next.next.next.next = head.next.next;
-
-        Node res = LoopPosition(head);
-        if (res == null)
-            System.out.print("Loop does not exist");
-        else
-            System.out.print("Loop starting node is " + res.key);
+        //head.next.next.next.next.next = head.next.next;
+        try {
+            Node res = LoopPosition(head);
+            if (res == null)
+                System.out.print("Loop does not exist");
+            else
+                System.out.print("Loop starting node is " + res.key);
+        }
+        catch (Exception e)
+        {
+            System.out.println("No loop available");
+        }
     }
 
     static class Node {
