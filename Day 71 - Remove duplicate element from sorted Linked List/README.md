@@ -1,26 +1,19 @@
-Find first node of loop in a linked list
------------------------------------------
-Write a function that checks whether a given Linked List contains a loop. If the loop is present then it returns point to the first node of the loop. Else it returns "No loop available".
-
+Remove duplicate element from sorted Linked List
+-------------------------------------------------
 TestCase 1:
 
 Input:
-N = 3
-value[] = {1,3,4}
-X = 2
-Output: Loop starting node is 3
-Explanation: The link list looks like
-1 -> 3 -> 4
-     ^    |
-     |____|    
-
+LinkedList: 2->2->4->5
+Output: 2 4 5
+Explanation: In the given linked list 
+2 ->2 -> 4-> 5, only 2 occurs more 
+than 1 time.
 
 TestCase 2:
 
 Input:
-N = 4
-value[] = {1,8,3,4}
-X = 0
-Output: No loop available
-Explanation: The Linked list does not 
-contains any loop.
+LinkedList: 2->2->2->2->2
+Output: 2
+Explanation: In the given linked list 
+2 ->2 ->2 ->2 ->2, 2 is the only element
+and is repeated 5 times.
