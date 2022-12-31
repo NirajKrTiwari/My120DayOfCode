@@ -1,64 +1,75 @@
 import java.util.*;
-class StartingPointLoop {
-    static Node newNode(int key) {
-        Node temp = new Node();
-        temp.key = key;
-        temp.next = null;
-        return temp;
+class Node
+    {
+        int data;
+        Node next;
+        Node(int d) {data = d; next = null; }
     }
-    static void printList(Node head) {
-        while (head != null) {
-            System.out.print(head.key + " ");
-            head = head.next;
-        }
+class Remove_Duplicate_From_LL
+{
+    Node head;  
+    Node tail;
+	public void addToTheLast(Node node) 
+	{
+	  if (head == null) 
+	  {
+	   head = node;
+	   tail = node;
+	  } 
+	  else 
+	  {
+	   tail.next = node;
+	   tail = node;
+	  }
+	}
+      void printList()
+    {
+        Node temp = head;
+        while (temp != null)
+        {
+           System.out.print(temp.data+" ");
+           temp = temp.next;
+        }  
         System.out.println();
     }
-    static Node LoopPosition(Node head) {
-        Node slow=head;
-        Node fast=head;
-        if(head==null)
-            return null;
-        while(fast!=null && fast.next!=null)
-        {
-            slow=slow.next;
-            fast=fast.next.next;
-            if(fast==slow)
-            {
-                slow=head;
-                break;
-            }
-        }
-        while(slow.next!=null)
-        {
-            if(slow==fast)
-                return slow;
-            slow=slow.next;
-            fast=fast.next;
-        }
-        return null;
-    }
-    public static void main(String[] args) {
-        Node head = newNode(50);
-        head.next = newNode(20);
-        head.next.next = newNode(15);
-        head.next.next.next = newNode(4);
-        head.next.next.next.next = newNode(10);
-        //head.next.next.next.next.next = head.next.next;
-        try {
-            Node res = LoopPosition(head);
-            if (res == null)
-                System.out.print("Loop does not exist");
-            else
-                System.out.print("Loop starting node is " + res.key);
-        }
-        catch (Exception e)
-        {
-            System.out.println("No loop available");
+	public static void main(String args[])
+    {
+         Scanner sc = new Scanner(System.in);
+		 int t=sc.nextInt();
+		 while(t>0)
+         {
+			int n = sc.nextInt();
+			Remove_Duplicate_From_LL llist = new Remove_Duplicate_From_LL(); 
+			int a1=sc.nextInt();
+			Node head= new Node(a1);
+            llist.addToTheLast(head);
+            for (int i = 1; i < n; i++) 
+			{
+				int a = sc.nextInt(); 
+				llist.addToTheLast(new Node(a));
+			}
+			
+        GfG g = new GfG();
+		llist.head = g.removeDuplicates(llist.head);
+		llist.printList();
+		
+        t--;		
         }
     }
-
-    static class Node {
-        int key;
-        Node next;
+}
+class GfG
+{
+    Node removeDuplicates(Node head)
+    {
+	Node curr = head;
+      while(curr.next!=null){
+          if(curr.data==curr.next.data){
+              curr.next = curr.next.next;
+          }
+          else{
+          curr = curr.next;
+          }
+      }
+      return head;
     }
 }
