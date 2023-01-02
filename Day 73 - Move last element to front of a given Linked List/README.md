@@ -1,25 +1,19 @@
-Remove duplicate element from unsorted Linked List
--------------------------------------------------
+Move last element to front of a given Linked List
+--------------------------------------------------
 TestCase 1:
 
 Input:
-N = 4
-value[] = {5,2,2,4}
-Output: 5 2 4
-Explanation:Given linked list elements are
-5->2->2->4, in which 2 is repeated only.
-So, we will delete the extra repeated
-elements 2 from the linked list and the
-resultant linked list will contain 5->2->4
+Linked list before moving last to front
+50 20 15 4 10 
+Output:
+Linked list after moving last to front
+10 50 20 15 4
 
 TestCase 2:
 
 Input:
-N = 5
-value[] = {2,2,2,2,2}
-Output: 2
-Explanation:Given linked list elements are
-2->2->2->2->2, in which 2 is repeated. So,
-we will delete the extra repeated elements
-2 from the linked list and the resultant
-linked list will contain only 2.
+Linked list before moving last to front
+3
+Output: 
+Linked list after moving last to front
+3 
